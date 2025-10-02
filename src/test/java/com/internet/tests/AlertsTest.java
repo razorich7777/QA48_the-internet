@@ -25,7 +25,7 @@ public class AlertsTest extends TestBase{
         new JavaScriptAlertsPage(driver).alertAcceptConfirmCancel().verifyAlertConfirmCancelPositive();
     }
     @Test
-    public void alertTestPromtPositive(){
+    public void alertTestPromptPositive(){
         new JavaScriptAlertsPage(driver).alertAcceptPrompt().verifyAlertPromptPositive();
     }
 
