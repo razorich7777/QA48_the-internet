@@ -18,4 +18,11 @@ public class HomePage extends BasePage{
         return new JavaScriptAlertsPage(driver);
     }
 
+    @FindBy(css = "[href='/frames']")
+    WebElement frames;
+
+    public FramesPage clickOnIFrameLink() {
+        click(frames);
+        return new FramesPage(driver);
+    }
 }

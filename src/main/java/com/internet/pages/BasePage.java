@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class BasePage {
     public WebDriver driver;
-    JavascriptExecutor js;
+    public static JavascriptExecutor js;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
@@ -19,7 +19,7 @@ public class BasePage {
         link.click();
     }
 
-    public void type(WebElement element, String text){
+    public void fill(WebElement element, String text){
         if(text!=null){
             click(element);
             element.clear();

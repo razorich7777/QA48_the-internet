@@ -14,24 +14,29 @@ public class AlertsTest extends TestBase{
 
     @Test
     public void alertTestPositive(){
-        new JavaScriptAlertsPage(driver).alertAccept().verifyAlertOkPositive();
+        new JavaScriptAlertsPage(driver)
+                .alertAccept()
+                .verifyAlertOkPositive();
     }
     @Test
     public void alertTestConfirmOkPositive(){
-        new JavaScriptAlertsPage(driver).alertAcceptConfirmOk().verifyAlertConfirmOkPositive();
+        new JavaScriptAlertsPage(driver)
+                .alertAcceptConfirmOk()
+                .verifyAlertConfirmOkPositive();
     }
     @Test
     public void alertTestConfirmCancelPositive(){
-        new JavaScriptAlertsPage(driver).alertAcceptConfirmCancel().verifyAlertConfirmCancelPositive();
+        new JavaScriptAlertsPage(driver)
+                .alertAcceptConfirmCancel()
+                .verifyAlertConfirmCancelPositive();
     }
     @Test
     public void alertTestPromptPositive(){
-        new JavaScriptAlertsPage(driver).alertAcceptPrompt().verifyAlertPromptPositive();
+        new JavaScriptAlertsPage(driver)
+                .alertAcceptPrompt()
+                .verifyAlertPromptPositive();
     }
 
 
-    @AfterMethod
-    public void exit(){
-        driver.quit();
-    }
+
 }

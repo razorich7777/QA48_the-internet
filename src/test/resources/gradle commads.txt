@@ -1,0 +1,30 @@
+gradle -Pbrowser=firefox clean qa1 -Psuite1
+
+gradle -Pbrowser=safari clean qa1 -Psuite2
+
+gradle clean qa1 -Psuite3
+
+
+
+java -jar jenkins.war
+
+*/1 * * * *
+
+GitHub
+++++++++++++++++++++++++++++++++++++++++++++++
+
+
+git add .
+
+
+
+git commit -m "add"
+
+
+
+git remote add origin https://github.com/razorich7777/qa48_prhonebook.git
+
+
+
+ git push
+++++++++++++++++++++++++++++++++++++++++++++++++++

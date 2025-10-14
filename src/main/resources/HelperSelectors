@@ -1,0 +1,2 @@
+findElementByXPath("//td[contains(@class,'remove-from-cart')]//input[@name='removefromcart']");
+findElementByXPath("(//div[contains(@class,'product-item') and .//input[@value='Add to cart'] and .//h2[@class='product-title']])[1]");
